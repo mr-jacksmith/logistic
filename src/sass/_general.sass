@@ -1,0 +1,79 @@
+@import '_mixins'
+
+.container
+    @include container
+
+header
+    background-color: #121214
+    .nav
+        padding-block: 33px
+        width: 100%
+        .nav-menu
+            display: grid
+            width: 100%
+            grid-template-columns: 2fr 8fr 3fr
+            #burger
+                display: none
+            #logo
+                font-size: 32px
+                font-weight: 1000
+                text-align: center
+                color: white
+            #menu
+                display: flex
+                align-items: center
+                width: 100%
+                padding-inline: 50px
+                ul
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    li>a
+                        color: white
+            #icons
+                display: flex
+                align-items: center
+                width: 100%
+                .icons-flex
+                    width: 100%
+                    padding-left: 50px
+                    display: flex
+                    justify-content: space-between
+                    div>i
+                        font-size: 18px
+                        color: white
+                        cursor: pointer
+
+main
+    div
+        .presentation-slider
+            @include pad($pad: 50px)
+            .slider
+                height: 630px
+                background-color: rgb(65, 78, 21)
+        .shoes, .clother, .accessories
+            @include pad(80px)
+            .block
+                height: 530px
+                background-color: rgb(21, 128, 243)
+        .calculator
+            @include pad(80px)
+            .block
+                height: 631px
+                background-color: rgb(121, 121, 121)
+        .about-shop
+            @include pad(80px)
+            .block
+                height: 426px
+                background-color: rgb(56, 243, 0)
+        .our-blog
+            @include pad(80px)
+            padding-bottom: 118px
+            .block
+                height: 600px
+                background-color: rgb(244, 56, 56)
+footer
+    background-color: rgb(74, 28, 139)
+    .footer-grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
