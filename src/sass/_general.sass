@@ -87,12 +87,24 @@ main
                                     cursor: pointer
                     .wrapped-1
                         background-color: rgb(78, 78, 78)
+                        background-image: url('../img/main-slider-1.png')
+                        background-size: cover
+                        background-position: center
                     .wrapped-2
                         background-color: rgb(224, 98, 98)
+                        background-image: url('../img/main-slider-1.png')
+                        background-size: cover
+                        background-position: center
                     .wrapped-3
                         background-color: rgb(98, 98, 98)
+                        background-image: url('../img/main-slider-1.png')
+                        background-size: cover
+                        background-position: center
                     .wrapped-4
                         background-color: rgb(109, 109, 09)
+                        background-image: url('../img/main-slider-1.png')
+                        background-size: cover
+                        background-position: center
                 .dots
                     position: absolute
                     right: 77px
@@ -125,18 +137,160 @@ main
                         border: none
                         background-color: #F0F2F6
                         cursor: pointer
+                        transition: all 0.5s
                         &:nth-of-type(2)
                             margin-left: 15px
+                        &:hover
+                            background-color: white
         .shoes, .clother, .accessories
             @include pad(80px)
             .block
                 height: 530px
-                background-color: rgb(21, 128, 243)
+                // background-color: rgb(21, 128, 243)
+                width: 88%
+                margin: 0 auto
+                display: grid
+                grid-template-rows: 0.33fr 4.5fr 1fr
+                overflow: hidden
+                position: relative
+                .title
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    h2
+                        font-size: 31px
+                        color: #121214
+                    h3
+                        a
+                            font-size: 14px
+                            color: black
+                            position: relative
+                            &::after
+                                content: ""
+                                width: 100%
+                                height: 2px
+                                background-color: black
+                                position: absolute
+                                top: 125%
+                                left: 0
+                .product
+                    display: grid
+                    grid-template-columns: repeat(16, 25%)
+                    height: 100%
+                    transition: 0.5s
+                    &-unit
+                        align-self: flex-end
+                        display: flex
+                        flex-direction: column
+                        .favorite
+                            align-self: flex-end
+                            a
+                                color: black
+                        .img
+                            img
+                                width: 100%
+                        h3
+                            font-size: 19px
+                            a
+                                color: black
+                        h4
+                            font-size: 14px
+                            color: #3C3C3C
+                .buttons
+                    display: flex
+                    align-items: center
+                    justify-self: center
+                    a
+                        cursor: pointer
+                    .dots-shoes, .dots-clother, .dots-accessories
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        column-gap: 45px
+                        z-index: 3
+                        margin-inline: 45px
+                        .dot-shoes, .dot-clother, .dot-accessories
+                            height: 6px
+                            width: 6px
+                            background-color: black
+                            border-radius: 50%
+                            cursor: pointer
+                            transition: 0.5s
+                            &.active
+                                width: 10px
+                                height: 10px
+                            
         .calculator
             @include pad(80px)
             .block
-                height: 631px
-                background-color: rgb(121, 121, 121)
+                height: calc(631 * 1vw/19.2)
+                background: linear-gradient(93deg, #0D99F8 0.94%, #21A0F8 5.36%, #54B5FF 27.35%, #0DBBF8 79%, #0DDBF8 97.53%)
+                border-radius: 7px
+                display: grid
+                grid-template-columns: 2fr 1fr
+                .main-title
+                    padding-top: calc(98 * 1vw/19.2)
+                    padding-left: calc(90 * 1vw/19.2)
+                    width: 83%
+                    h2
+                        font-size: calc(51 * 1vw/19.2)
+                        color: white
+                        letter-spacing: 5px
+                        line-height: calc(63 * 1vw/19.2)
+                    h3
+                        margin-top: 19px
+                        font-size: calc(19 * 1vw/19.2)
+                        color: white
+                        // letter-spacing: 5px
+                        line-height: calc(32 * 1vw/19.2)
+                        font-weight: 1000
+                        font-family: "AvenirNextCyr-Thin"
+                    .instruction
+                        margin-top: 24px
+                        display: grid
+                        grid-template-columns: repeat(2, 1fr)
+                        column-gap: 58px
+                        .step
+                            display: grid
+                            grid-template-columns: auto calc(258 * 1vw/19.2)
+                            column-gap: calc(20 * 1vw/19.2)
+                            .number
+                                font-size: 24px
+                                line-height: 32px
+                                border: solid 1px rgba(255, 255, 255, 0.5)
+                                border-radius: 50%
+                                width: calc(77 * 1vw/19.2)
+                                height: calc(77 * 1vw/19.2)
+                                color: white
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                // justify-self: center
+                                align-self: center
+                            .text
+                                font-size: calc(16 * 1vw/19.2)
+                                line-height: calc(22 * 1vw/19.2)
+                                font-family: "AvenirNextCyr-Thin"
+                                color: white
+                                font-weight: 1000
+                                align-self: center
+                    a
+                        display: inline-block
+                        margin-top: calc(41 * 1vw/19.2)
+                        font-size: calc(12 * 1vw/19.2)
+                        padding: calc(23 * 1vw/19.2) calc(27 * 1vw/19.2)
+                        background-color: #121214
+                        border-radius: calc(5 * 1vw/19.2)
+                        color: #fff
+                        cursor: pointer
+                .img
+                    height: 100%
+                    position: relative
+                    img
+                        height: 142%
+                        position: absolute
+                        bottom: -23%
+                        right: 5%
         .about-shop
             @include pad(80px)
             .block
