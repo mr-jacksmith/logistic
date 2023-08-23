@@ -45,6 +45,10 @@ header
                         cursor: pointer
 
 main
+    background: url('../img/bg-xwear.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position-y: 82.5%
     div
         .presentation-slider
             @include pad($pad: 50px)
@@ -294,16 +298,77 @@ main
         .about-shop
             @include pad(80px)
             .block
-                height: 426px
-                background-color: rgb(56, 243, 0)
+                height: calc(426 * 1vw/19.2)
+                // background-color: rgb(56, 243, 0)
+                width: 88%
+                margin: 0 auto
+                display: grid
+                grid-template-columns: 2fr 1fr
+                column-gap: calc(69 * 1vw/19.2)
+                .main-title
+                    height: calc(383 * 1vw/19.2)
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    h2
+                        font-size: calc(36 * 1vw/19.2)
+                        line-height: calc(48 * 1vw/19.2)
+                        text-transform: uppercase
+                        font-weight: 1000
+                        font-family: "AvenirNextCyr-Bold"
+                    h3
+                        .parph
+                            margin-top: calc(16 * 1vw/19.2)
+                            font-size: calc(16 * 1vw/19.2)
+                            font-family: "AvenirNextCyr-Thin"
+                            font-weight: 1000
+                            line-height: calc(30 * 1vw/19.2)
+                .advantages
+                    width: 100%
+                    height: 100%
+                    background-color: white
+                    box-shadow: 0px 12px 27px 0px rgba(0, 0, 0, 0.04), 0px 50px 50px 0px rgba(0, 0, 0, 0.03), 0px 112px 67px 0px rgba(0, 0, 0, 0.02), 0px 199px 80px 0px rgba(0, 0, 0, 0.01), 0px 312px 87px 0px rgba(0, 0, 0, 0)
+                    border-radius: calc(5 * 1vw/19.2)
+                    display: flex
+                    align-items: center
+                    &-block
+                        display: grid
+                        grid-template-rows: repeat(3, 1fr)
+                        row-gap: calc(40 * 1vw/19.2)
+                        width: calc(322.25 * 1vw/19.2)
+                        height: calc(347.75 * 1vw/19.2)
+                        margin-block: auto
+                        margin-inline: auto
+                        &-unit
+                            display: grid
+                            grid-template-columns: 1fr 3fr
+                            .imgPc
+                                img
+                                    width: calc(51.5 * 1vw/19.2)
+                                    height: calc(51.5 * 1vw/19.2)
+                            .text
+                                h3
+                                    font-size: calc(16 * 1vw/19.2)
+                                    font-family: "AvenirNextCyr-Bold"
+                                    line-height: calc(22*1vw/19.2)
+                                    text-transform: uppercase
+                                    color: rgba(18, 18, 20, 1)
+                                h4
+                                    margin-top: calc(4 * 1vw/19.2)
+                                    font-size: calc(14 * 1vw/19.2)
+                                    font-family: "AvenirNextCyr-Thin"
+                                    line-height: calc(20*1vw/19.2)
+                                    color: rgba(48, 48, 48, 1)
         .our-blog
             @include pad(80px)
             padding-bottom: 118px
             .block
-                height: 600px
-                background-color: rgb(244, 56, 56)
+                height: calc(600*1vw/19.2)
+                background-color: red
+
 footer
-    background-color: rgb(74, 28, 139)
+    background-color: black
+    height: calc(371*1vw/19.2)
     .footer-grid
         display: grid
         grid-template-columns: repeat(4, 1fr)
