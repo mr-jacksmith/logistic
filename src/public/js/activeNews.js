@@ -35,6 +35,6 @@ const showCurrentSlideNews = (n) => {
 }
 
 let currentIndexNews = 1
-const waveObjNews = document.querySelector('#news')
+const waveObjNews = document.querySelector('#wave-news-content')
 
 showCurrentSlideNews(currentIndexNews)

@@ -364,7 +364,107 @@ main
             padding-bottom: 118px
             .block
                 height: calc(600*1vw/19.2)
-                background-color: red
+                // background-color: red
+                &-content
+                    width: 88%
+                    height: 100%
+                    margin: 0 auto
+                    display: grid
+                    grid-template-rows: 0.33fr 4.5fr 1fr
+                    overflow: hidden
+                    .title
+                        height: 100%
+                        display: grid
+                        grid-template-columns: repeat(2, 1fr)
+                        h3
+                            text-align: right
+                            a
+                                font-size: 14px
+                                color: black
+                                position: relative
+                                &::after
+                                    content: ""
+                                    width: 100%
+                                    height: 2px
+                                    background-color: black
+                                    position: absolute
+                                    top: 125%
+                                    left: 0
+                    .wave-news
+                        margin-top: calc(33*1vw/19.2)
+                        width: 100%
+                        height: 100%
+                        overflow: hidden
+                        &-content
+                            display: grid
+                            grid-template-columns: repeat(12, 33.33%)
+                            transition: 0.5s
+                            &-unit
+                                display: flex
+                                flex-direction: column
+                                &:nth-of-type(3n+1)
+                                    padding-right: calc(15*1vw/19.2)
+                                &:nth-of-type(3n+2)
+                                    padding-inline: calc(15*1vw/19.2)
+                                &:nth-of-type(3n+3)
+                                    padding-left: calc(15*1vw/19.2)
+                                .img
+                                    img
+                                        width: 100%
+                                .title-text
+                                    margin-top: calc(13*1vw/19.2)
+                                    font-family: "AvenirNextCyr-Bold"
+                                    font-size: calc(23*1vw/19.2)
+                                    line-height: calc(30*1vw/19.2)
+                                    color: rgba(18, 18, 20, 1)
+                                .text
+                                    margin-top: calc(13*1vw/19.2)
+                                    font-family: "AvenirNextCyr-Thin"
+                                    font-size: calc(15*1vw/19.2)
+                                    line-height: calc(25*1vw/19.2)
+                                    color: rgba(48, 48, 48, 1)
+                                .bottom-nav
+                                    margin-top: calc(13*1vw/19.2)
+                                    display: grid
+                                    grid-template-columns: repeat(2, 1fr)
+                                    .link
+                                        a
+                                            font-family: "AvenirNextCyr-Bold"
+                                            font-size: calc(14*1vw/19.2)
+                                            line-height: calc(15*1vw/19.2)
+                                            color: black
+                                    .date
+                                        font-family: "AvenirNextCyr-Demi"
+                                        font-size: calc(11*1vw/19.2)
+                                        line-height: calc(23*1vw/19.2)
+                                        color: rgba(140, 143, 150, 1)
+                                        display: flex
+                                        justify-content: flex-end
+                                        align-items: flex-end
+                    .buttons
+                        display: flex
+                        align-items: flex-end
+                        justify-self: center
+                        a
+                            cursor: pointer
+                        .dots-news
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            column-gap: 45px
+                            z-index: 3
+                            margin-inline: 45px
+                            height: calc(22*1vw/19.2)
+                            .dot-news
+                                height: 6px
+                                width: 6px
+                                background-color: black
+                                border-radius: 50%
+                                cursor: pointer
+                                transition: 0.5s
+                                &.active
+                                    width: 10px
+                                    height: 10px
 
 footer
     background-color: black
