@@ -6,7 +6,7 @@
 header
     background-color: #121214
     .nav
-        padding-block: 33px
+        padding-block: calc(33*1vh/10.8)
         width: 100%
         .nav-menu
             display: grid
@@ -15,7 +15,7 @@ header
             #burger
                 display: none
             #logo
-                font-size: 32px
+                font-size: calc(32*1vh/10.8)
                 font-weight: 1000
                 text-align: center
                 color: white
@@ -23,7 +23,7 @@ header
                 display: flex
                 align-items: center
                 width: 100%
-                padding-inline: 50px
+                padding-inline: calc(50*1vw/19.2)
                 ul
                     width: 100%
                     display: flex
@@ -36,26 +36,26 @@ header
                 width: 100%
                 .icons-flex
                     width: 100%
-                    padding-left: 50px
+                    padding-left: calc(50*1vw/19.2)
                     display: flex
                     justify-content: space-between
                     div>i
-                        font-size: 18px
+                        font-size: calc(18*1vh/10.8)
                         color: white
                         cursor: pointer
 
 main
     background: url('../img/bg-xwear.png')
-    background-size: contain
+    background-size: 100% 75vh
     background-repeat: no-repeat
-    background-position-y: 82.5%
+    background-position-y: 275vh
     div
         .presentation-slider
-            @include pad($pad: 50px)
+            @include pad($pad: calc(50*1vh/10.8))
             .slider
-                height: 631px
+                height: calc(631*1vh/10.8)
                 background-color: rgb(65, 78, 21)
-                border-radius: 7px
+                border-radius: calc(7*1vw/19.2)
                 overflow: hidden
                 position: relative
                 .wave
@@ -68,25 +68,25 @@ main
                         width: 100%
                         .content
                             // height: 487px
-                            width: 571px
+                            width: calc(571*1vw/19.2)
                             // display: flex
                             // flex-direction: column
                             // justify-content: space-between
-                            padding-top: 98px
-                            padding-left: 90px
+                            padding-top: calc(98*1vh/10.8)
+                            padding-left: calc(90*1vw/19.2)
                             .main-title
                                 h1
-                                    font-size: 51px
+                                    font-size: calc(51*1vh/10.8)
                                 h2
-                                    margin-top: 19px
-                                    font-size: 19px
+                                    margin-top: calc(19*1vh/10.8)
+                                    font-size: calc(19*1vh/10.8)
                                 a
                                     display: inline-block
-                                    margin-top: 19px
-                                    font-size: 12px
-                                    padding: 23px 27px
+                                    margin-top: calc(19*1vh/10.8)
+                                    font-size: calc(12*1vh/10.8)
+                                    padding: calc(23*1vh/10.8) calc(27*1vw/19.2)
                                     background-color: #121214
-                                    border-radius: 5px
+                                    border-radius: calc(5*1vw/19.2)
                                     color: white
                                     cursor: pointer
                     .wrapped-1
@@ -111,50 +111,50 @@ main
                         background-position: center
                 .dots
                     position: absolute
-                    right: 77px
+                    right: calc(77*1vw/19.2)
                     top: 50%
                     transform: translateY(-50%)
                     display: flex
                     flex-direction: column
-                    row-gap: 45px
+                    align-items: center
+                    row-gap: calc(45*1vh/10.8)
                     z-index: 3
                     .dot
-                        height: 6px
-                        width: 6px
+                        height: calc(6*1vw/19.2)
+                        width: calc(6*1vw/19.2)
                         background-color: white
                         border-radius: 50%
                         cursor: pointer
                         transition: 0.5s
                         &.active
-                            width: 10px
-                            height: 10px
+                            width: calc(10*1vw/19.2)
+                            height: calc(10*1vw/19.2)
                 .buttons
                     position: absolute
-                    left: 90px
-                    bottom: 46px
+                    left: calc(90*1vw/19.2)
+                    bottom: calc(46*1vh/10.8)
                     z-index: 3
                     button
-                        font-size: 14px
-                        width: 67px
-                        height: 67px
+                        font-size: calc(14*1vh/10.8)
+                        width: calc(67*1vw/19.2)
+                        height: calc(67*1vw/19.2)
                         border-radius: 50%
                         border: none
                         background-color: #F0F2F6
                         cursor: pointer
                         transition: all 0.5s
                         &:nth-of-type(2)
-                            margin-left: 15px
+                            margin-left: calc(15*1vw/19.2)
                         &:hover
                             background-color: white
         .shoes, .clother, .accessories
-            @include pad(80px)
+            @include pad(calc(80*1vh/10.8))
             .block
-                height: 530px
-                // background-color: rgb(21, 128, 243)
+                height: calc(530*1vh/10.8)
                 width: 88%
                 margin: 0 auto
                 display: grid
-                grid-template-rows: 0.33fr 4.5fr 1fr
+                grid-template-rows: 0.33fr 6fr 1fr
                 overflow: hidden
                 position: relative
                 .title
@@ -162,17 +162,17 @@ main
                     justify-content: space-between
                     align-items: center
                     h2
-                        font-size: 31px
+                        font-size: calc(31*1vh/10.8)
                         color: #121214
                     h3
                         a
-                            font-size: 14px
+                            font-size: calc(14*1vh/10.8)
                             color: black
                             position: relative
                             &::after
                                 content: ""
                                 width: 100%
-                                height: 2px
+                                height: calc(2*1vh/10.8)
                                 background-color: black
                                 position: absolute
                                 top: 125%
@@ -194,11 +194,11 @@ main
                             img
                                 width: 100%
                         h3
-                            font-size: 19px
+                            font-size: calc(19*1vh/10.8)
                             a
                                 color: black
                         h4
-                            font-size: 14px
+                            font-size: calc(14*1vh/10.8)
                             color: #3C3C3C
                 .buttons
                     display: flex
@@ -210,58 +210,57 @@ main
                         display: flex
                         flex-direction: row
                         align-items: center
-                        column-gap: 45px
+                        column-gap: calc(45*1vw/19.2)
                         z-index: 3
-                        margin-inline: 45px
+                        margin-inline: calc(45*1vw/19.2)
                         .dot-shoes, .dot-clother, .dot-accessories
-                            height: 6px
-                            width: 6px
+                            height: calc(6*1vw/19.2)
+                            width: calc(6*1vw/19.2)
                             background-color: black
                             border-radius: 50%
                             cursor: pointer
                             transition: 0.5s
                             &.active
-                                width: 10px
-                                height: 10px
+                                width: calc(10*1vw/19.2)
+                                height: calc(10*1vw/19.2)
                             
         .calculator
-            @include pad(80px)
+            @include pad(calc(80*1vh/10.8))
             .block
-                height: calc(631 * 1vw/19.2)
+                height: calc(631*1vh/10.8)
                 background: linear-gradient(93deg, #0D99F8 0.94%, #21A0F8 5.36%, #54B5FF 27.35%, #0DBBF8 79%, #0DDBF8 97.53%)
-                border-radius: 7px
+                border-radius: calc(7*1vw/19.2)
                 display: grid
                 grid-template-columns: 2fr 1fr
                 .main-title
-                    padding-top: calc(98 * 1vw/19.2)
+                    padding-top: calc(98*1vh/10.8)
                     padding-left: calc(90 * 1vw/19.2)
                     width: 83%
                     h2
-                        font-size: calc(51 * 1vw/19.2)
+                        font-size: calc(51*1vh/10.8)
                         color: white
-                        letter-spacing: 5px
-                        line-height: calc(63 * 1vw/19.2)
+                        line-height: calc(63*1vh/10.8)
                     h3
-                        margin-top: 19px
-                        font-size: calc(19 * 1vw/19.2)
+                        margin-top: calc(19*1vh/10.8)
+                        font-size: calc(19*1vh/10.8)
                         color: white
                         // letter-spacing: 5px
-                        line-height: calc(32 * 1vw/19.2)
+                        line-height: calc(32*1vh/10.8)
                         font-weight: 1000
                         font-family: "AvenirNextCyr-Thin"
                     .instruction
-                        margin-top: 24px
+                        margin-top: calc(24*1vh/10.8)
                         display: grid
                         grid-template-columns: repeat(2, 1fr)
-                        column-gap: 58px
+                        column-gap: calc(58*1vw/19.2)
                         .step
                             display: grid
                             grid-template-columns: auto calc(258 * 1vw/19.2)
                             column-gap: calc(20 * 1vw/19.2)
                             .number
-                                font-size: 24px
-                                line-height: 32px
-                                border: solid 1px rgba(255, 255, 255, 0.5)
+                                font-size: calc(24*1vh/10.8)
+                                line-height: calc(32*1vh/10.8)
+                                border: solid calc(1*1vh/10.8) rgba(255, 255, 255, 0.5)
                                 border-radius: 50%
                                 width: calc(77 * 1vw/19.2)
                                 height: calc(77 * 1vw/19.2)
@@ -272,17 +271,17 @@ main
                                 // justify-self: center
                                 align-self: center
                             .text
-                                font-size: calc(16 * 1vw/19.2)
-                                line-height: calc(22 * 1vw/19.2)
+                                font-size: calc(16*1vh/10.8)
+                                line-height: calc(22*1vh/10.8)
                                 font-family: "AvenirNextCyr-Thin"
                                 color: white
                                 font-weight: 1000
                                 align-self: center
                     a
                         display: inline-block
-                        margin-top: calc(41 * 1vw/19.2)
-                        font-size: calc(12 * 1vw/19.2)
-                        padding: calc(23 * 1vw/19.2) calc(27 * 1vw/19.2)
+                        margin-top: calc(41*1vh/10.8)
+                        font-size: calc(12*1vh/10.8)
+                        padding: calc(23*1vh/10.8) calc(27 * 1vw/19.2)
                         background-color: #121214
                         border-radius: calc(5 * 1vw/19.2)
                         color: #fff
@@ -296,33 +295,32 @@ main
                         bottom: -23%
                         right: 5%
         .about-shop
-            @include pad(80px)
+            @include pad(calc(80*1vh/10.8))
             .block
-                height: calc(426 * 1vw/19.2)
-                // background-color: rgb(56, 243, 0)
+                height: calc(426*1vh/10.8)
                 width: 88%
                 margin: 0 auto
                 display: grid
                 grid-template-columns: 2fr 1fr
                 column-gap: calc(69 * 1vw/19.2)
                 .main-title
-                    height: calc(383 * 1vw/19.2)
+                    height: calc(383*1vh/10.8)
                     display: flex
                     flex-direction: column
                     justify-content: center
                     h2
-                        font-size: calc(36 * 1vw/19.2)
-                        line-height: calc(48 * 1vw/19.2)
+                        font-size: calc(36*1vh/10.8)
+                        line-height: calc(48*1vh/10.8)
                         text-transform: uppercase
                         font-weight: 1000
                         font-family: "AvenirNextCyr-Bold"
                     h3
                         .parph
-                            margin-top: calc(16 * 1vw/19.2)
-                            font-size: calc(16 * 1vw/19.2)
+                            margin-top: calc(16*1vh/10.8)
+                            font-size: calc(16*1vh/10.8)
                             font-family: "AvenirNextCyr-Thin"
                             font-weight: 1000
-                            line-height: calc(30 * 1vw/19.2)
+                            line-height: calc(30*1vh/10.8)
                 .advantages
                     width: 100%
                     height: 100%
@@ -334,9 +332,9 @@ main
                     &-block
                         display: grid
                         grid-template-rows: repeat(3, 1fr)
-                        row-gap: calc(40 * 1vw/19.2)
-                        width: calc(322.25 * 1vw/19.2)
-                        height: calc(347.75 * 1vw/19.2)
+                        row-gap: calc(40*1vh/10.8)
+                        width: calc(322.25*1vw/19.2)
+                        height: calc(347.75*1vh/10.8)
                         margin-block: auto
                         margin-inline: auto
                         &-unit
@@ -348,23 +346,22 @@ main
                                     height: calc(51.5 * 1vw/19.2)
                             .text
                                 h3
-                                    font-size: calc(16 * 1vw/19.2)
+                                    font-size: calc(16*1vh/10.8)
                                     font-family: "AvenirNextCyr-Bold"
-                                    line-height: calc(22*1vw/19.2)
+                                    line-height: calc(22*1vh/10.8)
                                     text-transform: uppercase
                                     color: rgba(18, 18, 20, 1)
                                 h4
-                                    margin-top: calc(4 * 1vw/19.2)
-                                    font-size: calc(14 * 1vw/19.2)
+                                    margin-top: calc(4*1vh/10.8)
+                                    font-size: calc(14*1vh/10.8)
                                     font-family: "AvenirNextCyr-Thin"
-                                    line-height: calc(20*1vw/19.2)
+                                    line-height: calc(20*1vh/10.8)
                                     color: rgba(48, 48, 48, 1)
         .our-blog
-            @include pad(80px)
-            padding-bottom: 118px
+            @include pad(calc(80*1vh/10.8))
+            padding-bottom: calc(118*1vh/10.8)
             .block
-                height: calc(600*1vw/19.2)
-                // background-color: red
+                height: calc(600*1vh/10.8)
                 &-content
                     width: 88%
                     height: 100%
@@ -379,19 +376,19 @@ main
                         h3
                             text-align: right
                             a
-                                font-size: 14px
+                                font-size: calc(14*1vh/10.8)
                                 color: black
                                 position: relative
                                 &::after
                                     content: ""
                                     width: 100%
-                                    height: 2px
+                                    height: calc(2*1vh/10.8)
                                     background-color: black
                                     position: absolute
                                     top: 125%
                                     left: 0
                     .wave-news
-                        margin-top: calc(33*1vw/19.2)
+                        margin-top: calc(33*1vh/10.8)
                         width: 100%
                         height: 100%
                         overflow: hidden
@@ -412,31 +409,31 @@ main
                                     img
                                         width: 100%
                                 .title-text
-                                    margin-top: calc(13*1vw/19.2)
+                                    margin-top: calc(13*1vh/10.8)
                                     font-family: "AvenirNextCyr-Bold"
-                                    font-size: calc(23*1vw/19.2)
-                                    line-height: calc(30*1vw/19.2)
+                                    font-size: calc(23*1vh/10.8)
+                                    line-height: calc(30*1vh/10.8)
                                     color: rgba(18, 18, 20, 1)
                                 .text
-                                    margin-top: calc(13*1vw/19.2)
+                                    margin-top: calc(13*1vh/10.8)
                                     font-family: "AvenirNextCyr-Thin"
-                                    font-size: calc(15*1vw/19.2)
-                                    line-height: calc(25*1vw/19.2)
+                                    font-size: calc(15*1vh/10.8)
+                                    line-height: calc(25*1vh/10.8)
                                     color: rgba(48, 48, 48, 1)
                                 .bottom-nav
-                                    margin-top: calc(13*1vw/19.2)
+                                    margin-top: calc(13*1vh/10.8)
                                     display: grid
                                     grid-template-columns: repeat(2, 1fr)
                                     .link
                                         a
                                             font-family: "AvenirNextCyr-Bold"
-                                            font-size: calc(14*1vw/19.2)
-                                            line-height: calc(15*1vw/19.2)
+                                            font-size: calc(14*1vh/10.8)
+                                            line-height: calc(15*1vh/10.8)
                                             color: black
                                     .date
                                         font-family: "AvenirNextCyr-Demi"
-                                        font-size: calc(11*1vw/19.2)
-                                        line-height: calc(23*1vw/19.2)
+                                        font-size: calc(11*1vh/10.8)
+                                        line-height: calc(23*1vh/10.8)
                                         color: rgba(140, 143, 150, 1)
                                         display: flex
                                         justify-content: flex-end
@@ -451,20 +448,20 @@ main
                             display: flex
                             flex-direction: row
                             align-items: center
-                            column-gap: 45px
+                            column-gap: calc(45*1vw/19.2)
                             z-index: 3
-                            margin-inline: 45px
-                            height: calc(22*1vw/19.2)
+                            margin-inline: calc(45*1vw/19.2)
+                            height: calc(22*1vh/10.8)
                             .dot-news
-                                height: 6px
-                                width: 6px
+                                height: calc(6*1vw/19.2)
+                                width: calc(6*1vw/19.2)
                                 background-color: black
                                 border-radius: 50%
                                 cursor: pointer
                                 transition: 0.5s
                                 &.active
-                                    width: 10px
-                                    height: 10px
+                                    width: calc(10*1vw/19.2)
+                                    height: calc(10*1vw/19.2)
 
 footer
     background-color: black
@@ -497,20 +494,20 @@ footer
                 text-transform: uppercase
                 color: white
                 font-family: "AvenirNextCyr-Bold"
-                font-size: calc(15*1vw/19.2)
-                line-height: calc(28*1vw/19.2)
+                font-size: calc(15*1vh/10.8)
+                line-height: calc(28*1vh/10.8)
             &-top
                 display: flex
                 flex-direction: column
-                row-gap: calc(9*1vw/19.2)
+                row-gap: calc(9*1vh/10.8)
                 .list
                     ul
                         display: flex
                         flex-direction: column
-                        row-gap: calc(9*1vw/19.2)
+                        row-gap: calc(9*1vh/10.8)
             &-top .list ul li a, .call-to-action, .our-email
-                    font-size: calc(15*1vw/19.2)
-                    line-height: calc(28*1vw/19.2)
+                    font-size: calc(15*1vh/10.8)
+                    line-height: calc(28*1vh/10.8)
                     color: #DCDCE0
                     font-family: "AvenirNextCyr-Thin"
             &:nth-of-type(3)
@@ -519,17 +516,17 @@ footer
                 .tel
                     font-family: "AvenirNextCyr-Medium"
                     font-weight: 1000
-                    font-size: calc(16*1vw/19.2)
-                    line-height: calc(32*1vw/19.2)
+                    font-size: calc(16*1vh/10.8)
+                    line-height: calc(32*1vh/10.8)
                     color: white
                 .little-title
                     font-family: "AvenirNextCyr-Bold"
-                    font-size: calc(12*1vw/19.2)
+                    font-size: calc(12*1vh/10.8)
                     color: white
                 .messangers, .socials
                     display: flex
                     flex-direction: column
-                    row-gap: calc(9*1vw/19.2)
+                    row-gap: calc(9*1vh/10.8)
                     .list
                         display: flex
                         column-gap: calc(9*1vw/19.2)
@@ -543,11 +540,11 @@ footer
                             width: 100%
                             position: relative
                             input
-                                height: calc(43*1vw/19.2)
+                                height: calc(43*1vh/10.8)
                                 width: 100%
                                 background-color: transparent
                                 border: none
-                                border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+                                border-bottom: calc(1*1vh/10.8) solid rgba(255, 255, 255, 0.5)
                             button
                                 position: absolute
                                 top: 50%
@@ -561,11 +558,11 @@ footer
                                 background-color: white
                                 cursor: pointer
                         .warning
-                            margin-top: calc(15*1vw/19.2)
+                            margin-top: calc(15*1vh/10.8)
                             font-family: "AvenirNextCyr-Thin"
                             color: rgba(255, 255, 255, 0.5)
-                            font-size: calc(16*1vw/19.2)
-                            line-height: calc(18*1vw/19.2)
+                            font-size: calc(16*1vh/10.8)
+                            line-height: calc(18*1vh/10.8)
                 .footer-grid-unit-bot
                     display: flex
                     flex-direction: column
@@ -574,5 +571,5 @@ footer
                         text-transform: uppercase
                         text-decoration: underline
                         color: #707076
-                        font-size: calc(11*1vw/19.2)
-                        line-height: calc(18*1vw/19.2)
+                        font-size: calc(11*1vh/10.8)
+                        line-height: calc(18*1vh/10.8)
