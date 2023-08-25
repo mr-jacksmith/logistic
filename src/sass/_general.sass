@@ -468,7 +468,111 @@ main
 
 footer
     background-color: black
-    height: calc(371*1vw/19.2)
     .footer-grid
         display: grid
         grid-template-columns: repeat(4, 1fr)
+        width: 88%
+        margin-inline: auto
+        padding-block: calc(45*1vw/19.2)
+        &-unit
+            display: grid
+            grid-template-rows: 5fr 1fr
+            &:nth-of-type(1)
+                .footer-grid-unit-bot
+                    img
+                        width: calc(100*1vw/19.2)
+            &:nth-of-type(2)
+                .footer-grid-unit-bot
+                    img
+                        width: calc(140*1vw/19.2)
+            &:nth-of-type(1), &:nth-of-type(2)
+                .footer-grid-unit-bot
+                    display: flex
+                    align-items: flex-end
+            &:nth-of-type(3)
+                display: flex
+                flex-direction: column
+                row-gap: calc(9*1vw/19.2)
+            .title
+                text-transform: uppercase
+                color: white
+                font-family: "AvenirNextCyr-Bold"
+                font-size: calc(15*1vw/19.2)
+                line-height: calc(28*1vw/19.2)
+            &-top
+                display: flex
+                flex-direction: column
+                row-gap: calc(9*1vw/19.2)
+                .list
+                    ul
+                        display: flex
+                        flex-direction: column
+                        row-gap: calc(9*1vw/19.2)
+            &-top .list ul li a, .call-to-action, .our-email
+                    font-size: calc(15*1vw/19.2)
+                    line-height: calc(28*1vw/19.2)
+                    color: #DCDCE0
+                    font-family: "AvenirNextCyr-Thin"
+            &:nth-of-type(3)
+                .our-email
+                    text-decoration: underline
+                .tel
+                    font-family: "AvenirNextCyr-Medium"
+                    font-weight: 1000
+                    font-size: calc(16*1vw/19.2)
+                    line-height: calc(32*1vw/19.2)
+                    color: white
+                .little-title
+                    font-family: "AvenirNextCyr-Bold"
+                    font-size: calc(12*1vw/19.2)
+                    color: white
+                .messangers, .socials
+                    display: flex
+                    flex-direction: column
+                    row-gap: calc(9*1vw/19.2)
+                    .list
+                        display: flex
+                        column-gap: calc(9*1vw/19.2)
+                        img
+                            width: calc(30*1vw/19.2)
+                            height: calc(30*1vw/19.2)
+            &:nth-of-type(4)
+                .footer-grid-unit-top
+                    .subscription
+                        form
+                            width: 100%
+                            position: relative
+                            input
+                                height: calc(43*1vw/19.2)
+                                width: 100%
+                                background-color: transparent
+                                border: none
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+                            button
+                                position: absolute
+                                top: 50%
+                                right: 0
+                                transform: translateY(-50%)
+                                width: calc(29*1vw/19.2)
+                                height: calc(29*1vw/19.2)
+                                border-radius: 50%
+                                border: none
+                                color: black
+                                background-color: white
+                                cursor: pointer
+                        .warning
+                            margin-top: calc(15*1vw/19.2)
+                            font-family: "AvenirNextCyr-Thin"
+                            color: rgba(255, 255, 255, 0.5)
+                            font-size: calc(16*1vw/19.2)
+                            line-height: calc(18*1vw/19.2)
+                .footer-grid-unit-bot
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    a
+                        text-transform: uppercase
+                        text-decoration: underline
+                        color: #707076
+                        font-size: calc(11*1vw/19.2)
+                        line-height: calc(18*1vw/19.2)
