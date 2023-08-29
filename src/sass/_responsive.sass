@@ -1,0 +1,723 @@
+@media screen and (max-aspect-ratio: 1.5)
+    main
+        div 
+            .about-shop 
+                .block
+                    .advantages-block
+                        row-gap: calc(40*1vw/19.2)
+                        &-unit 
+                            .text
+                                h3
+                                    font-size: calc(16*1vw/19.2)
+                                    line-height: calc(22*1vw/19.2)
+                                h4
+                                    margin-top: calc(4*1vw/19.2)
+                                    font-size: calc(14*1vw/19.2)
+                                    line-height: calc(20*1vw/19.2)
+            .calculator 
+                .block
+                    .main-title
+                        .instruction
+                            .step
+                                .text
+                                    font-size: calc(16*1vw/19.2)
+                                    line-height: calc(22*1vw/19.2)
+                    .img 
+                        img
+                            right: -8%
+            .our-blog
+                padding-bottom: calc(118*1vw/19.2)
+
+@media screen and (max-aspect-ratio: 1.78)
+    main
+        background-position-y: 276vh
+
+@media screen and (max-aspect-ratio: 1.61)
+    main
+        background-position-y: 264vh
+
+@media screen and (max-aspect-ratio: 1.4)
+    header 
+        .nav 
+            .nav-menu
+                #menu
+                    padding-inline: 0
+    main
+        background-size: 100% 68vh
+        background-position-y: 257vh
+
+@media screen and (max-aspect-ratio: 1.3)
+    main
+        background-size: 100% 68vh
+        background-position-y: 250vh
+
+
+@media screen and (max-width: 768px)
+    header 
+        .nav 
+            .nav-menu
+                grid-template-columns: 5fr 8fr 8fr
+                #menu
+                    display: none
+                #logo
+                    grid-row: 1/2
+                    grid-column: 1/2
+                    a
+                        img
+                            width: 84px
+                #burger
+                    grid-row: 1/2
+                    display: flex
+                    grid-column: 2/3
+                #icons
+                    grid-row: 1/2
+                    grid-column: 3/4
+    main 
+        div 
+            .presentation-slider
+                @include pad($pad: calc(40*1vw/7.68))
+                .slider
+                    height: calc(451*1vw/7.68)
+                    border-radius: 7px
+                    .dots
+                        display: none
+                    .buttons
+                        left: calc(70*1vw/7.68)
+                        bottom: calc(32*1vw/7.68)
+                        button
+                            font-size: 11px
+                            width: 54px
+                            height: 54px
+                            &:nth-of-type(2)
+                                margin-left: 10px
+                    .wave
+                        .wrapped
+                            .content
+                                width: calc(367*1vw/7.68)
+                                padding-top: calc(59*1vw/7.68)
+                                padding-left: calc(70*1vw/7.68)
+                                .main-title
+                                    h1
+                                        font-size: calc(34*1vw/7.68)
+                                    h2
+                                        margin-top: calc(19*1vw/7.68)
+                                        font-size: calc(14*1vw/7.68)
+                                    a
+                                        margin-top: calc(19*1vw/7.68)
+                                        font-size: calc(12*1vw/7.68)
+                                        padding: calc(23*1vw/7.68) calc(27*1vw/7.68)
+                                        border-radius: 5px
+            .shoes, .clother, .accessories
+                @include pad(calc(44*1vw/7.68))
+                .block
+                    &-content
+                        width: 100%
+                    .title
+                        h2
+                            font-size: calc(25*1vw/7.68)
+                        h3
+                            a
+                                font-size: calc(14*1vw/7.68)
+                    .wave-shoes, .wave-clother, .wave-accessories
+                        .product
+                            margin-top: calc(32*1vw/7.68)
+                            height: auto
+                            grid-template-columns: repeat(16, 50%)
+                    .buttons
+                        display: flex
+                        justify-content: center
+                        .dots-shoes, .dots-clother, .dots-accessories
+                            column-gap: 45px
+                            margin-inline: 45px
+                            .dot-shoes, .dot-clother, .dot-accessories
+                                height: 6px
+                                width: 6px
+                                &.active
+                                    width: 10px
+                                    height: 10px
+            .calculator
+                @include pad(calc(60*1vw/7.68))
+                .block
+                    height: calc(535*1vw/7.68)
+                    border-radius: 7px
+                    position: relative
+                    .main-title
+                        padding-top: calc(36*1vw/7.68)
+                        padding-left: calc(70 * 1vw/7.68)
+                        width: 70%
+                        h2
+                            font-size: calc(43*1vw/7.68)
+                            line-height: calc(43*1vw/7.68)
+                        h3
+                            margin-top: calc(19*1vw/7.68)
+                            font-size: calc(17*1vw/7.68)
+                            line-height: calc(27*1vw/7.68)
+                        .instruction
+                            margin-top: calc(49*1vw/7.68)
+                            column-gap: calc(20*1vw/7.68)
+                            .step
+                                grid-template-columns: auto calc(221 * 1vw/7.68)
+                                column-gap: calc(16 * 1vw/7.68)
+                                .number
+                                    font-size: calc(24*1vw/7.68)
+                                    line-height: calc(14*1vw/7.68)
+                                    width: calc(62 * 1vw/7.68)
+                                    height: calc(62 * 1vw/7.68)
+                                .text
+                                    font-size: calc(14*1vw/7.68)
+                                    line-height: calc(21*1vw/7.68)
+                        .link
+                            width: 86%
+                            margin-top: calc(35*1vw/7.68)
+                            display: flex
+                            justify-content: center
+                            position: absolute
+                            a
+                                margin-top: 0
+                                font-size: calc(12*1vw/7.68)
+                                padding: calc(23*1vw/7.68) calc(27 * 1vw/7.68)
+                                border-radius: 5px
+                    .img
+                        height: 52%
+                        position: relative
+                        img
+                            height: 142%
+                            position: absolute
+                            bottom: -23%
+                            right: 5%
+            .about-shop
+                .block
+                    grid-template-columns: 1fr
+                    grid-template-rows: repeat(2, auto)
+                    height: auto
+                    width: 100%
+                    .main-title
+                        height: auto
+                        h2
+                            font-size: calc(25*1vw/7.68)
+                            line-height: calc(35*1vw/7.68)
+                        h3
+                            .parph
+                                margin-top: calc(11*1vw/7.68)
+                                font-size: calc(15*1vw/7.68)
+                                line-height: calc(27*1vw/7.68)
+                    .advantages
+                        margin-top: calc(31*1vw/7.68)
+                        height: auto
+                        border-radius: 5px
+                        &-block
+                            grid-template-rows: 1fr
+                            grid-template-columns: repeat(3, 1fr)
+                            row-gap: 0
+                            column-gap: calc(26*1vw/7.68)
+                            width: calc(668*1vw/7.68)
+                            height: auto
+                            padding: 28px 30px
+                            &-unit
+                                grid-template-columns: 1fr
+                                grid-template-rows: 1fr 3fr
+                                row-gap: 17px
+                                .imgPc
+                                    img
+                                        width: calc(40 * 1vw/7.68)
+                                        height: calc(40 * 1vw/7.68)
+                                .text
+                                    h3
+                                        font-size: calc(15*1vw/7.68)
+                                        line-height: calc(22*1vw/7.68)
+                                    h4
+                                        margin-top: calc(4*1vh/9)
+                                        font-size: calc(14*1vw/7.68)
+                                        line-height: calc(20*1vw/7.68)
+                >img
+                    bottom: 5%
+            .our-blog
+                @include pad(calc(60*1vw/7.68))
+                padding-bottom: calc(80*1vw/7.68)
+                .block
+                    height: auto
+                    &-content
+                        grid-template-rows: 0.33fr 4.5fr 0.5fr
+                        .title
+                            h2
+                                font-size: calc(25*1vw/7.68)
+                                line-height: calc(42*1vw/7.68)
+                            h3
+                                a
+                                    font-size: calc(14*1vw/7.68)
+                                    &::after
+                                        height: 2px
+                        .wave-news
+                            margin-top: calc(40*1vw/7.68)
+                            &-content
+                                grid-template-columns: repeat(12, 50%)
+                                &-unit
+                                    &:nth-of-type(2n)
+                                        padding-left: 15px
+                                    &:nth-of-type(2n + 1)
+                                        padding-right: 15px
+                                    .title-text
+                                        margin-top: calc(13*1vw/7.68)
+                                        font-size: calc(17*1vh/9)
+                                        line-height: calc(22*1vh/9)
+                                    .text
+                                        margin-top: calc(13*1vw/7.68)
+                                        font-size: calc(13*1vw/7.68)
+                                        line-height: calc(22*1vw/7.68)
+                                    .bottom-nav
+                                        margin-top: calc(13*1vw/7.68)
+                                        .link
+                                            a
+                                                font-size: calc(11*1vh/9)
+                                                line-height: calc(15*1vh/9)
+                                        .date
+                                            font-size: calc(11*1vh/9)
+                                            line-height: calc(23*1vh/9)
+    footer
+        .footer-grid
+            grid-template-columns: repeat(3, 1fr)
+            padding-block: 35px
+            row-gap: 31px
+            &-unit-top
+                row-gap: 9px
+                &:nth-of-type(3)
+                    row-gap: 9px
+                .title
+                    font-size: calc(15*1vh/9)
+                    line-height: calc(28*1vh/9)
+                .list
+                    ul
+                        row-gap: 9px
+                & .list ul li a, .call-to-action, .our-email
+                        font-size: calc(15*1vh/9)
+                        line-height: calc(28*1vh/9)
+                &:nth-of-type(3)
+                    .tel
+                        font-size: calc(16*1vh/9)
+                        line-height: calc(32*1vh/9)
+                    .little-title
+                        font-size: calc(12*1vh/9)
+                    .messangers, .socials
+                        row-gap: 9px
+                        .list
+                            column-gap: 9px
+                            img
+                                width: 30px
+                                height: 30px
+                &:nth-of-type(4)
+                    grid-column: 1/4
+                    grid-row: 2/3
+                    display: grid
+                    grid-template-columns: repeat(2, 1fr)
+                    row-gap: 0
+                    .title
+                        grid-row: 1/2
+                        grid-column: 1/2
+                    .call-to-action
+                        grid-row: 2/3
+                        grid-column: 1/2
+                    .subscription
+                        grid-row: 1/3
+                        grid-column: 2/3
+                        align-self: center
+                        .warning
+                            display: none
+                        form
+                            input
+                                height: calc(44*1vw/7.68)
+                            button
+                                width: 29px
+                                height: 29px
+                    >.warning
+                        display: block
+                        grid-column: 1/3
+            &-unit-bot
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                &.uno
+                    grid-row: 3/4
+                    grid-column: 1/2
+                    img
+                        width: 100px
+                        height: 40px
+                &.duo
+                    justify-self: end
+                    grid-row: 3/4
+                    grid-column: 3/4
+                    img
+                        width: 140px
+                        height: 24px
+                &.tres
+                    grid-row: 3/4
+                    grid-column: 2/3
+                    a
+                        text-transform: uppercase
+                        text-decoration: underline
+                        color: #707076
+                        font-size: 11px
+                        line-height: 18px
+
+@media screen and (max-width: 360px)
+    header 
+        .nav 
+            .nav-menu
+                grid-template-columns: repeat(3, 1fr)
+                column-gap: 12%
+                #logo
+                    grid-row: 1/2
+                    grid-column: 2/3
+                    a
+                        img
+                            width: 84px
+                #burger
+                    width: 100%
+                    grid-row: 1/2
+                    grid-column: 1/2
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    >div
+                        display: block
+                        i
+                            font-size: calc(17.6*1vw/3.6)
+                    .lines
+                        width: 20px
+                        height: 10px
+                #icons
+                    grid-row: 1/2
+                    grid-column: 3
+                    .icons-flex
+                        padding-left: 0
+                        >div i
+                            font-size: calc(17.6*1vw/3.6)
+                        .search
+                            display: none
+                        .notifications
+                            display: none
+    main 
+        div
+            .presentation-slider
+                @include pad($pad: calc(25*1vw/3.6))
+                .slider
+                    height: calc(339*1vw/3.6)
+                    .wave
+                        .wrapped
+                            .content
+                                width: calc(208*1vw/3.6)
+                                padding-top: calc(43*1vw/3.6)
+                                padding-left: calc(17*1vw/3.6)
+                                .main-title
+                                    h1
+                                        font-size: calc(18*1vw/3.6)
+                                    h2
+                                        margin-top: calc(7*1vw/3.6)
+                                        font-size: calc(12*1vw/3.6)
+                                    a
+                                        margin-top: calc(13*1vw/3.6)
+                                        font-size: calc(10*1vw/3.6)
+                                        padding: calc(15.5*1vw/3.6) calc(21.2*1vw/3.6)
+                                        border-radius: 5px
+                    .buttons
+                        position: absolute
+                        left: calc(20*1vw/3.6)
+                        bottom: calc(15*1vw/3.6)
+                        z-index: 3
+                        button
+                            font-size: calc(16*1vw/3.6)
+                            width: calc(54*1vw/3.6)
+                            height: calc(54*1vw/3.6)
+                            &:nth-of-type(2)
+                                margin-left: calc(10*1vw/3.6)
+                            &:hover
+                                background-color: #F0F2F6
+            .shoes, .clother, .accessories
+                @include pad(calc(60*1vw/3.6))
+                .block
+                    &-content
+                        .title
+                            span
+                                display: none
+                            h2
+                                font-size: calc(19*1vw/3.6)
+                            h3
+                                a
+                                    font-size: calc(12*1vw/3.6)
+                        .wave-shoes, .wave-clother, .wave-accessories
+                            margin-top: calc(15*1vw/3.6)
+                            .product
+                                grid-template-columns: repeat(16, 50%)
+                                &-unit
+                                    h3
+                                        font-size: calc(14*1vw/3.6)
+                                    h4
+                                        font-size: calc(15*1vw/3.6)
+            .shoes
+                @include pad(calc(30*1vw/3.6))
+            .calculator
+                @include pad(calc(60*1vw/3.6))
+                .block
+                    height: calc(511*1vw/3.6)
+                    grid-template-columns: 1fr
+                    width: 100%
+                    .main-title
+                        padding: calc(33*1vw/3.6) calc(11*1vw/3.6)
+                        width: 100%
+                        h2
+                            font-size: calc(23*1vw/3.6)
+                            line-height: calc(32*1vw/3.6)
+                            text-align: center
+                        h3
+                            margin-top: calc(10*1vw/3.6)
+                            font-size: calc(14*1vw/3.6)
+                            line-height: calc(21*1vw/3.6)
+                            text-align: center
+                        .instruction
+                            margin-top: calc(22*1vw/3.6)
+                            grid-template-columns: 1fr
+                            grid-template-rows: repeat(2, 1fr)
+                            row-gap: calc(23*1vw/3.6)
+                            .step
+                                grid-template-columns: auto calc(229 * 1vw/3.6)
+                                row-gap: calc(16 * 1vw/3.6)
+                                .number
+                                    font-size: calc(25*1vw/3.6)
+                                    width: calc(62 * 1vw/3.6)
+                                    height: calc(62 * 1vw/3.6)
+                                .text
+                                    font-size: calc(14*1vw/3.6)
+                                    line-height: calc(21*1vw/3.6)
+                        .link a
+                            margin-top: calc(37*1vw/3.6)
+                            font-size: calc(10*1vw/3.6)
+                            padding: calc(15.5*1vw/3.6) calc(15.7*1vw/3.6)
+                            border-radius: 5px
+                    .img
+                        display: none
+            .about-shop
+                @include pad(calc(35*1vw/3.6))
+                .block
+                    height: calc(813*1vw/3.6)
+                    .main-title
+                        height: auto
+                        width: 100%
+                        h2
+                            font-size: calc(19*1vw/3.6)
+                            line-height: calc(29*1vw/3.6)
+                        h3
+                            .parph
+                                margin-top: calc(8*1vw/3.6)
+                                font-size: calc(15*1vw/3.6)
+                                line-height: calc(20*1vw/3.6)
+                    .advantages
+                        border-radius: 5px
+                        &-block
+                            grid-template-columns: 1fr
+                            grid-template-rows: repeat(3, 1fr)
+                            row-gap: calc(28*1vw/3.6)
+                            width: 100%
+                            height: auto
+                            &-unit
+                                grid-template-rows: 1fr
+                                grid-template-columns: 1fr 3fr
+                                .imgPc
+                                    img
+                                        width: calc(44 * 1vw/3.6)
+                                        height: calc(44 * 1vw/3.6)
+                                .text
+                                    h3
+                                        font-size: calc(12*1vw/3.6)
+                                        line-height: calc(22*1vw/3.6)
+                                    h4
+                                        margin-top: 4px
+                                        font-size: calc(14*1vw/3.6)
+                                        line-height: calc(20*1vw/3.6)
+                >img
+                    position: absolute
+                    width: 140%
+                    height: 160%
+                    bottom: 5%
+                    left: -20%
+                    right: -20%
+                    z-index: -1
+            .our-blog
+                @include pad(calc(100*1vw/3.6))
+                padding-bottom: calc(80*1vw/3.6)
+                .block
+                    height: calc(510*1vw/3.6)
+                    &-content
+                        width: 100%
+                        height: auto
+                        grid-template-rows: 0.33fr 4.5fr 0.5fr
+                        .title
+                            h2
+                                font-size: calc(19*1vw/3.6)
+                            h3
+                                a
+                                    font-size: calc(12*1vw/3.6)
+                                &:nth-of-type(1)
+                                    display: none
+                                &:nth-of-type(2)
+                                    display: inline
+                        .wave-news
+                            margin-top: calc(33*1vw/3.6)
+                            &-content
+                                grid-template-columns: repeat(12, 100%)
+                                &-unit
+                                    &:nth-of-type(3n+1)
+                                        padding-right: 0
+                                    &:nth-of-type(3n+2)
+                                        padding-inline: 0
+                                    &:nth-of-type(3n+3)
+                                        padding-left: 0
+                                    .title-text
+                                        margin-top: calc(13*1vw/3.6)
+                                        font-size: calc(18*1vw/3.6)
+                                        line-height: calc(25*1vw/3.6)
+                                    .text
+                                        margin-top: calc(13*1vw/3.6)
+                                        font-size: calc(15*1vw/3.6)
+                                        line-height: calc(24*1vw/3.6)
+                                    .bottom-nav
+                                        margin-top: calc(13.5*1vw/3.6)
+                                        .link
+                                            a
+                                                font-size: calc(13*1vw/3.6)
+                                                line-height: calc(15*1vw/3.6)
+                                        .date
+                                            font-size: calc(11*1vw/3.6)
+                                            line-height: calc(23*1vw/3.6)
+                        .buttons
+                            display: flex
+                            align-items: flex-end
+                            justify-self: center
+                            a
+                                cursor: pointer
+                            .dots-news
+                                display: flex
+                                flex-direction: row
+                                align-items: center
+                                column-gap: 45px
+                                z-index: 3
+                                margin-inline: 45px
+                                height: calc(22*1vw/3.6)
+                                .dot-news
+                                    height: 6px
+                                    width: 6px
+                                    background-color: black
+                                    border-radius: 50%
+                                    cursor: pointer
+                                    transition: 0.5s
+                                    &.active
+                                        width: 10px
+                                        height: 10px
+    // footer
+    //     background-color: black
+    //     overflow: hidden
+    //     .footer-grid
+    //         display: grid
+    //         grid-template-columns: repeat(4, 1fr)
+    //         width: 88%
+    //         margin-inline: auto
+    //         padding-block: 45px
+    //         &-unit-top
+    //             display: flex
+    //             flex-direction: column
+    //             row-gap: calc(9*1vw/3.6)
+    //             &:nth-of-type(3)
+    //                 display: flex
+    //                 flex-direction: column
+    //                 row-gap: calc(9*1vw/3.6)
+    //             .title
+    //                 text-transform: uppercase
+    //                 color: white
+    //                 font-family: "Bold"
+    //                 font-size: clamp(13px, calc(15*1vw/3.6), 18px)
+    //                 line-height: calc(28*1vw/3.6)
+    //             .list
+    //                 ul
+    //                     display: flex
+    //                     flex-direction: column
+    //                     row-gap: calc(9*1vw/3.6)
+    //             & .list ul li a, .call-to-action, .our-email
+    //                     font-size: clamp(13px, calc(15*1vw/3.6), 18px)
+    //                     line-height: calc(28*1vw/3.6)
+    //                     color: #DCDCE0
+    //                     font-family: "Thin"
+    //             &:nth-of-type(3)
+    //                 .our-email
+    //                     text-decoration: underline
+    //                 .tel
+    //                     font-family: "Medium"
+    //                     font-weight: 1000
+    //                     font-size: clamp(14px, calc(16*1vw/3.6), 18px)
+    //                     line-height: calc(32*1vw/3.6)
+    //                     color: white
+    //                 .little-title
+    //                     font-family: "Bold"
+    //                     font-size: clamp(10px, calc(12*1vw/3.6), 14px)
+    //                     color: white
+    //                 .messangers, .socials
+    //                     display: flex
+    //                     flex-direction: column
+    //                     row-gap: calc(9*1vw/3.6)
+    //                     .list
+    //                         display: flex
+    //                         column-gap: calc(9*1vw/3.6)
+    //                         img
+    //                             width: calc(30*1vw/3.6)
+    //                             height: calc(30*1vw/3.6)
+    //             &:nth-of-type(4)
+    //                 >.warning
+    //                     display: none
+    //                 .subscription
+    //                     form
+    //                         width: 100%
+    //                         position: relative
+    //                         input
+    //                             font-size: clamp(10px, calc(13*1vw/3.6), 15px)
+    //                             line-height: calc(28*1vw/3.6)
+    //                             height: calc(43*1vw/3.6)
+    //                             width: 100%
+    //                             background-color: transparent
+    //                             border: none
+    //                             border-bottom: calc(1*1vw/3.6) solid rgba(255, 255, 255, 0.5)
+    //                         button
+    //                             position: absolute
+    //                             top: 50%
+    //                             right: 0
+    //                             transform: translateY(-50%)
+    //                             width: calc(29*1vw/3.6)
+    //                             height: calc(29*1vw/3.6)
+    //                             border-radius: 50%
+    //                             border: none
+    //                             color: black
+    //                             background-color: white
+    //                             cursor: pointer
+    //                 .warning
+    //                     margin-top: calc(15*1vw/3.6)
+    //                     font-family: "Thin"
+    //                     color: rgba(255, 255, 255, 0.5)
+    //                     font-size: clamp(14px, calc(16*1vw/3.6), 18px)
+    //                     line-height: calc(18*1vw/3.6)
+    //         &-unit-bot
+    //             display: flex
+    //             flex-direction: column
+    //             justify-content: flex-end
+    //             &.uno
+    //                 img
+    //                     width: 100px
+    //                     height: 40px
+    //             &.duo
+    //                 img
+    //                     width: 140px
+    //                     height: 24px
+    //             &.tres
+    //                 grid-column: 4/5
+    //                 a
+    //                     text-transform: uppercase
+    //                     text-decoration: underline
+    //                     color: #707076
+    //                     font-size: clamp(9px, calc(11*1vw/3.6), 13px)
+    //                     line-height: calc(18*1vw/3.6)
+            
