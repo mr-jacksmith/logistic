@@ -360,7 +360,8 @@
 
 @media screen and (max-width: 360px)
     header 
-        .nav 
+        .nav
+            padding-block: calc(26*1vw/3.6)
             .nav-menu
                 grid-template-columns: repeat(3, 1fr)
                 column-gap: 12%
@@ -611,113 +612,115 @@
                                     &.active
                                         width: 10px
                                         height: 10px
-    // footer
-    //     background-color: black
-    //     overflow: hidden
-    //     .footer-grid
-    //         display: grid
-    //         grid-template-columns: repeat(4, 1fr)
-    //         width: 88%
-    //         margin-inline: auto
-    //         padding-block: 45px
-    //         &-unit-top
-    //             display: flex
-    //             flex-direction: column
-    //             row-gap: calc(9*1vw/3.6)
-    //             &:nth-of-type(3)
-    //                 display: flex
-    //                 flex-direction: column
-    //                 row-gap: calc(9*1vw/3.6)
-    //             .title
-    //                 text-transform: uppercase
-    //                 color: white
-    //                 font-family: "Bold"
-    //                 font-size: clamp(13px, calc(15*1vw/3.6), 18px)
-    //                 line-height: calc(28*1vw/3.6)
-    //             .list
-    //                 ul
-    //                     display: flex
-    //                     flex-direction: column
-    //                     row-gap: calc(9*1vw/3.6)
-    //             & .list ul li a, .call-to-action, .our-email
-    //                     font-size: clamp(13px, calc(15*1vw/3.6), 18px)
-    //                     line-height: calc(28*1vw/3.6)
-    //                     color: #DCDCE0
-    //                     font-family: "Thin"
-    //             &:nth-of-type(3)
-    //                 .our-email
-    //                     text-decoration: underline
-    //                 .tel
-    //                     font-family: "Medium"
-    //                     font-weight: 1000
-    //                     font-size: clamp(14px, calc(16*1vw/3.6), 18px)
-    //                     line-height: calc(32*1vw/3.6)
-    //                     color: white
-    //                 .little-title
-    //                     font-family: "Bold"
-    //                     font-size: clamp(10px, calc(12*1vw/3.6), 14px)
-    //                     color: white
-    //                 .messangers, .socials
-    //                     display: flex
-    //                     flex-direction: column
-    //                     row-gap: calc(9*1vw/3.6)
-    //                     .list
-    //                         display: flex
-    //                         column-gap: calc(9*1vw/3.6)
-    //                         img
-    //                             width: calc(30*1vw/3.6)
-    //                             height: calc(30*1vw/3.6)
-    //             &:nth-of-type(4)
-    //                 >.warning
-    //                     display: none
-    //                 .subscription
-    //                     form
-    //                         width: 100%
-    //                         position: relative
-    //                         input
-    //                             font-size: clamp(10px, calc(13*1vw/3.6), 15px)
-    //                             line-height: calc(28*1vw/3.6)
-    //                             height: calc(43*1vw/3.6)
-    //                             width: 100%
-    //                             background-color: transparent
-    //                             border: none
-    //                             border-bottom: calc(1*1vw/3.6) solid rgba(255, 255, 255, 0.5)
-    //                         button
-    //                             position: absolute
-    //                             top: 50%
-    //                             right: 0
-    //                             transform: translateY(-50%)
-    //                             width: calc(29*1vw/3.6)
-    //                             height: calc(29*1vw/3.6)
-    //                             border-radius: 50%
-    //                             border: none
-    //                             color: black
-    //                             background-color: white
-    //                             cursor: pointer
-    //                 .warning
-    //                     margin-top: calc(15*1vw/3.6)
-    //                     font-family: "Thin"
-    //                     color: rgba(255, 255, 255, 0.5)
-    //                     font-size: clamp(14px, calc(16*1vw/3.6), 18px)
-    //                     line-height: calc(18*1vw/3.6)
-    //         &-unit-bot
-    //             display: flex
-    //             flex-direction: column
-    //             justify-content: flex-end
-    //             &.uno
-    //                 img
-    //                     width: 100px
-    //                     height: 40px
-    //             &.duo
-    //                 img
-    //                     width: 140px
-    //                     height: 24px
-    //             &.tres
-    //                 grid-column: 4/5
-    //                 a
-    //                     text-transform: uppercase
-    //                     text-decoration: underline
-    //                     color: #707076
-    //                     font-size: clamp(9px, calc(11*1vw/3.6), 13px)
-    //                     line-height: calc(18*1vw/3.6)
+    footer
+        .footer-grid
+            grid-template-columns: 1fr
+            grid-template-rows: auto
+            width: 100%
+            padding-block: 28px
+            row-gap: 15px
+            &-unit-top
+                // row-gap: calc(9*1vw/3.6)
+                &:not(:nth-of-type(4))
+                    .title
+                        position: relative
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 100%
+                            height: 2px
+                            background-color: rgba(255, 255, 255, 0.08)
+                            bottom: -20%
+                &:nth-of-type(1)
+                    grid-row: 3/4
+                    grid-column: 1/2
+                &:nth-of-type(2)
+                    margin-top: calc(10*1vw/3.6)
+                    grid-row: 2/3
+                    grid-column: 1/2
+                &:nth-of-type(3)
+                    grid-row: 4/5
+                    grid-column: 1/2
+                    // row-gap: calc(9*1vw/3.6)
+                .title
+                    font-size: calc(13*1vw/3.6)
+                    line-height: calc(28*1vw/3.6)
+                    display: flex
+                    justify-content: space-between
+                    i
+                        display: inline
+                .list
+                    display: none
+                &:nth-of-type(3)
+                    .little-title
+                        display: none
+                    .messangers
+                        margin-top: calc(21*1vw/3.6)
+                        .list
+                            display: flex
+                            justify-content: center
+                            img
+                                width: 40px
+                                height: 40px
+                            a
+                                &:last-child
+                                    display: inline
+                    .socials
+                        display: none
+                &:nth-of-type(4)
+                    grid-template-columns: 1fr
+                    grid-template-rows: auto
+                    grid-column: 1/2
+                    grid-row: 5/6
+                    .title
+                        font-size: calc(13*1vw/3.6)
+                        line-height: calc(28*1vw/3.6)
+                    >.warning
+                        display: none
+                    >div
+                        justify-self: center
+                    .call-to-action
+                        grid-row: 2/3
+                        font-size: calc(14*1vw/3.6)
+                        line-height: calc(28*1vw/3.6)
+                    .subscription
+                        grid-row: 3/4
+                        grid-column: 1/2
+                        form
+                            input
+                                font-size: calc(14*1vw/3.6)
+                                line-height: calc(28*1vw/3.6)
+                                height: calc(43*1vw/3.6)
+                            button
+                                width: calc(29*1vw/3.6)
+                                height: calc(29*1vw/3.6)
+                        .warning
+                            margin-top: calc(15*1vw/3.6)
+                            display: block
+                            text-align: center
+                            font-size: calc(12*1vw/3.6)
+                            line-height: calc(18*1vw/3.6)
+            &-unit-bot
+                &.uno
+                    justify-self: center
+                    grid-column: 1/2
+                    grid-row: 1/2
+                    img
+                        width: 100px
+                        height: 40px
+                &.duo
+                    margin-top: calc(20*1vw/3.6)
+                    grid-column: 1/2
+                    grid-row: 7/8
+                    justify-self: center
+                    img
+                        width: 140px
+                        height: 24px
+                &.tres
+                    grid-column: 1/2
+                    grid-row: 6/7
+                    justify-self: center
+                    a
+                        font-size: calc(11*1vw/3.6)
+                        line-height: calc(18*1vw/3.6)
             

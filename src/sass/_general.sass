@@ -534,6 +534,8 @@ footer
                 font-family: "Bold"
                 font-size: clamp(13px, calc(15*1vw/19.2), 18px)
                 line-height: calc(28*1vw/19.2)
+                i
+                    display: none
             .list
                 ul
                     display: flex
@@ -567,6 +569,11 @@ footer
                         img
                             width: calc(30*1vw/19.2)
                             height: calc(30*1vw/19.2)
+                .messangers
+                    .list
+                        a
+                            &:last-child
+                                display: none
             &:nth-of-type(4)
                 >.warning
                     display: none
