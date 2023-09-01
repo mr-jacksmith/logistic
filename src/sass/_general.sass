@@ -55,10 +55,13 @@ header
                     width: 100%
                     display: flex
                     justify-content: space-between
-                    li>a
-                        color: white
-                        font-size: clamp(14px, calc(16*1vw/19.2), 20px)
-                        line-height: calc(20*1vw/19.2)
+                    li
+                        display: flex
+                        align-items: center
+                        &>a
+                            color: white
+                            font-size: clamp(10px, calc(16*1vw/19.2), 20px)
+                            line-height: calc(20*1vw/19.2)
             #icons
                 display: flex
                 align-items: center
@@ -106,10 +109,10 @@ main
                             padding-left: calc(90*1vw/19.2)
                             .main-title
                                 h1
-                                    font-size: clamp(36px, calc(51*1vw/19.2), 64px)
+                                    font-size: clamp(30px, calc(51*1vw/19.2), 64px)
                                 h2
                                     margin-top: calc(19*1vw/19.2)
-                                    font-size: clamp(16px, calc(19*1vw/19.2), 24px)
+                                    font-size: clamp(14px, calc(19*1vw/19.2), 24px)
                                     font-family: "Light"
                                     font-weight: 0
                                 a
@@ -173,6 +176,7 @@ main
                         border-radius: 50%
                         border: none
                         background-color: #F0F2F6
+                        color: rgba(0, 0, 0, 0.8)
                         cursor: pointer
                         transition: all 0.5s
                         &:nth-of-type(2)
@@ -199,6 +203,8 @@ main
                             font-size: clamp(24px, calc(31*1vw/19.2), 38px)
                             color: #121214
                         h3
+                            display: flex
+                            align-items: flex-start
                             a
                                 font-size: clamp(12px, calc(14*1vw/19.2), 16px)
                                 color: black
@@ -232,7 +238,7 @@ main
                                     img
                                         width: 100%
                                 h3
-                                    font-size: clamp(16px, calc(19*1vw/19.2), 24px)
+                                    font-size: clamp(14px, calc(19*1vw/19.2), 24px)
                                     a
                                         color: black
                                 h4
@@ -275,12 +281,12 @@ main
                     padding-left: calc(90 * 1vw/19.2)
                     width: 83%
                     h2
-                        font-size: clamp(36px, calc(51*1vw/19.2), 64px)
+                        font-size: clamp(30px, calc(51*1vw/19.2), 64px)
                         color: white
                         line-height: calc(63*1vw/19.2)
                     h3
                         margin-top: calc(19*1vw/19.2)
-                        font-size: clamp(16px, calc(19*1vw/19.2), 24px)
+                        font-size: clamp(12px, calc(19*1vw/19.2), 24px)
                         color: white
                         // letter-spacing: 5px
                         line-height: calc(32*1vw/19.2)
@@ -348,7 +354,7 @@ main
                     flex-direction: column
                     justify-content: center
                     h2
-                        font-size: clamp(30px, calc(36*1vw/19.2), 42px)
+                        font-size: clamp(24px, calc(36*1vw/19.2), 42px)
                         line-height: calc(48*1vw/19.2)
                         text-transform: uppercase
                         font-weight: 1000
@@ -356,7 +362,7 @@ main
                     h3
                         .parph
                             margin-top: calc(16*1vw/19.2)
-                            font-size: clamp(14px, calc(16*1vw/19.2), 18px)
+                            font-size: clamp(12px, calc(16*1vw/19.2), 18px)
                             font-family: "Thin"
                             font-weight: 1000
                             line-height: calc(30*1vw/19.2)
@@ -408,10 +414,10 @@ main
             @include pad(calc(80*1vw/19.2))
             padding-bottom: calc(118*1vw/19.2)
             .block
-                height: calc(600*1vw/19.2)
+                // height: calc(600*1vw/19.2)
                 &-content
                     width: 88%
-                    height: 100%
+                    // height: 100%
                     margin: 0 auto
                     display: grid
                     grid-template-rows: 0.33fr 4.5fr 1fr
@@ -420,8 +426,14 @@ main
                         height: 100%
                         display: grid
                         grid-template-columns: repeat(2, 1fr)
+                        h2
+                            font-size: clamp(24px, calc(31*1vw/19.2), 38px)
+                            color: #121214
                         h3
                             text-align: right
+                            display: flex
+                            align-items: center
+                            justify-content: flex-end
                             a
                                 font-size: clamp(12px, calc(14*1vw/19.2), 16px)
                                 color: black
@@ -460,13 +472,13 @@ main
                                 .title-text
                                     margin-top: calc(13*1vw/19.2)
                                     font-family: "Bold"
-                                    font-size: clamp(18px, calc(23*1vw/19.2), 28px)
+                                    font-size: clamp(14px, calc(23*1vw/19.2), 28px)
                                     line-height: calc(30*1vw/19.2)
                                     color: rgba(18, 18, 20, 1)
                                 .text
                                     margin-top: calc(13*1vw/19.2)
                                     font-family: "Thin"
-                                    font-size: clamp(13px, calc(15*1vw/19.2), 18px)
+                                    font-size: clamp(10px, calc(15*1vw/19.2), 18px)
                                     line-height: calc(25*1vw/19.2)
                                     color: rgba(48, 48, 48, 1)
                                 .bottom-nav
@@ -476,7 +488,7 @@ main
                                     .link
                                         a
                                             font-family: "Bold"
-                                            font-size: clamp(12px, calc(14*1vw/19.2), 16px)
+                                            font-size: clamp(10px, calc(14*1vw/19.2), 16px)
                                             line-height: calc(15*1vw/19.2)
                                             color: black
                                     .date
@@ -489,8 +501,10 @@ main
                                         align-items: flex-end
                     .buttons
                         display: flex
-                        align-items: flex-end
+                        align-items: center
                         justify-self: center
+                        align-self: end
+                        height: 25px
                         a
                             cursor: pointer
                         .dots-news
@@ -532,7 +546,7 @@ footer
                 text-transform: uppercase
                 color: white
                 font-family: "Bold"
-                font-size: clamp(13px, calc(15*1vw/19.2), 18px)
+                font-size: clamp(10px, calc(15*1vw/19.2), 18px)
                 line-height: calc(28*1vw/19.2)
                 i
                     display: none
@@ -542,7 +556,7 @@ footer
                     flex-direction: column
                     row-gap: calc(9*1vw/19.2)
             & .list ul li a, .call-to-action, .our-email
-                    font-size: clamp(13px, calc(15*1vw/19.2), 18px)
+                    font-size: clamp(10px, calc(15*1vw/19.2), 18px)
                     line-height: calc(28*1vw/19.2)
                     color: #DCDCE0
                     font-family: "Thin"
@@ -552,12 +566,12 @@ footer
                 .tel
                     font-family: "Medium"
                     font-weight: 1000
-                    font-size: clamp(14px, calc(16*1vw/19.2), 18px)
+                    font-size: clamp(12px, calc(16*1vw/19.2), 18px)
                     line-height: calc(32*1vw/19.2)
                     color: white
                 .little-title
                     font-family: "Bold"
-                    font-size: clamp(10px, calc(12*1vw/19.2), 14px)
+                    font-size: clamp(8px, calc(12*1vw/19.2), 14px)
                     color: white
                 .messangers, .socials
                     display: flex
@@ -605,7 +619,7 @@ footer
                     margin-top: calc(15*1vw/19.2)
                     font-family: "Thin"
                     color: rgba(255, 255, 255, 0.5)
-                    font-size: clamp(12px, calc(16*1vw/19.2), 18px)
+                    font-size: clamp(8px, calc(16*1vw/19.2), 18px)
                     line-height: calc(18*1vw/19.2)
         &-unit-bot
             display: flex
@@ -625,6 +639,6 @@ footer
                     text-transform: uppercase
                     text-decoration: underline
                     color: #707076
-                    font-size: clamp(9px, calc(11*1vw/19.2), 13px)
+                    font-size: clamp(8px, calc(11*1vw/19.2), 13px)
                     line-height: calc(18*1vw/19.2)
             

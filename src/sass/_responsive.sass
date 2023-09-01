@@ -1,4 +1,12 @@
-@media screen and (max-aspect-ratio: 1.5)
+@media screen and (max-aspect-ratio: 1.78)
+    main
+        background-position-y: 276vh
+
+@media screen and (max-aspect-ratio: 1.61)
+    main
+        background-position-y: 264vh
+
+@media screen and (max-aspect-ratio: 1.6)
     main
         div 
             .about-shop 
@@ -28,14 +36,6 @@
             .our-blog
                 padding-bottom: calc(118*1vw/19.2)
 
-@media screen and (max-aspect-ratio: 1.78)
-    main
-        background-position-y: 276vh
-
-@media screen and (max-aspect-ratio: 1.61)
-    main
-        background-position-y: 264vh
-
 @media screen and (max-aspect-ratio: 1.4)
     header 
         .nav 
@@ -51,6 +51,146 @@
         background-size: 100% 68vh
         background-position-y: 250vh
 
+@media screen and (max-width: 1000px)
+    header 
+        .nav 
+            .nav-menu
+                #logo 
+                    a 
+                        img
+                            width: 50%
+                #menu 
+                    ul 
+                        li>a
+                            font-size: calc(8*1vw/8)
+                #icons 
+                    .icons-flex 
+                        div>i
+                            font-size: calc(12*1vw/8)
+    main 
+        div 
+            .presentation-slider 
+                .slider 
+                    .wave 
+                        .wrapped 
+                            .content 
+                                .main-title 
+                                    h1
+                                        font-size: calc(20*1vw/8)
+                                    h2
+                                        font-size: calc(10*1vw/8)
+                                    a
+                                        font-size: calc(8*1vw/8)
+            .accessories, .clother, .shoes
+                .block
+                    &-content 
+                        .title 
+                            h2
+                                font-size: 1.6vw
+                            h3
+                                a
+                                    font-size: .73vw
+                        .wave-shoes, .wave-clother, .wave-accessories
+                            .product
+                                &-unit
+                                    .favorite
+                                        a
+                                            i
+                                                font-size: calc(12*1vw/8)
+                                    h3
+                                        font-size: calc(10*1vw/8)
+                                    h4
+                                        font-size: calc(9*1vw/8)
+                    .buttons
+                        a
+                            font-size: calc(12*1vw/8)
+                        .dots-shoes, .dots-clother, .dots-accessories
+                            .dot-shoes, .dot-clother, .dot-accessories
+                                height: 4px
+                                width: 4px
+                                &.active
+                                    width: 8px
+                                    height: 8px
+            .calculator 
+                .block 
+                    .main-title 
+                        h2
+                            font-size: 2.65vw
+                        h3
+                            font-size: .98vw
+                        .instruction 
+                            .step 
+                                .number
+                                    font-size: 1.25vw
+                        a
+                            font-size: .825vw
+            .about-shop 
+                .block 
+                    .main-title 
+                        h2
+                            font-size: 2.2vw
+                        h3
+                            .parph
+                                font-size: 1vw
+            .our-blog 
+                .block-content 
+                    .title 
+                        h2
+                            font-size: 1.6vw
+                        h3
+                            a
+                                font-size: .8vw
+                    .wave-news-content-unit 
+                        .title-text
+                            font-size: 1.4vw
+                        .text
+                            font-size: 1vw
+                        .bottom-nav 
+                            .link 
+                                a
+                                    font-size: 1vw
+                            .date
+                                font-size: .8vw
+                    .buttons
+                        a
+                            font-size: calc(12*1vw/8)
+                        .dots-news
+                            .dot-news
+                                height: 4px
+                                width: 4px
+                                &.active
+                                    width: 8px
+                                    height: 8px
+    footer 
+        .footer-grid-unit-top 
+            .title
+                font-size: 1.2vw
+            .call-to-action, .list ul li a, .our-email
+                font-size: 1vw
+            &:nth-of-type(3) 
+                .tel
+                    font-size: calc(10*1vw/8)
+            &:nth-of-type(4)
+                .warning
+                    font-size: calc(6.5*1vw/8)
+                .subscription 
+                    form 
+                        input
+                            font-size: calc(8*1vw/8)
+                    button
+                        font-size: calc(8*1vw/8)
+        .footer-grid-unit-bot
+            &.uno
+                img
+                    width: 50px
+                    height: auto
+            &.duo
+                img
+                    width: 70px
+                    height: auto
+            &.tres 
+                a
+                    font-size: calc(6*1vw/8)
 
 @media screen and (max-width: 768px)
     header 
@@ -331,6 +471,8 @@
                     >.warning
                         display: block
                         grid-column: 1/3
+                    .warning
+                        font-size: calc(12*1vw/7.68)
             &-unit-bot
                 display: flex
                 flex-direction: column
@@ -355,8 +497,22 @@
                         text-transform: uppercase
                         text-decoration: underline
                         color: #707076
-                        font-size: 11px
+                        font-size: calc(10*1vw/7.68)
                         line-height: 18px
+
+@media screen and (max-width: 500px)
+    header 
+        .nav 
+            .nav-menu
+                grid-template-columns: repeat(3, 1fr)
+                #logo 
+                    a 
+                        img
+                            width: 60px
+                #icons 
+                    .icons-flex 
+                        div>i
+                            font-size: calc(12*1vw/4.14)
 
 @media screen and (max-width: 360px)
     header 
@@ -432,6 +588,8 @@
                                 margin-left: calc(10*1vw/3.6)
                             &:hover
                                 background-color: #F0F2F6
+                            i
+                                font-size: calc(12*1vw/3.6)
             .shoes, .clother, .accessories
                 @include pad(calc(60*1vw/3.6))
                 .block
@@ -724,3 +882,53 @@
                         font-size: calc(11*1vw/3.6)
                         line-height: calc(18*1vw/3.6)
             
+@media screen and (max-width: 280px)
+    main 
+        div 
+            .accessories, .clother, .shoes, .our-blog
+                .block
+                    &-content
+                        .buttons
+                            height: 25px
+                            align-self: end
+                            align-items: center
+                            a 
+                                font-size: calc(12*1vw/3.6)
+                            .dots-shoes, .dots-clother, .dots-accessories, .dots-news
+                                margin-inline: 30px
+                                column-gap: 30px
+                                .dot-shoes, .dot-clother, .dot-accessories, .dot-news
+                                    width: 4px
+                                    height: 4px
+                                    &.active
+                                        width: 8px
+                                        height: 8px
+    header          
+        .nav
+            .nav-menu
+                column-gap: 12%
+                #logo
+                    a
+                        img
+                            width: calc(54*1vw/2.4)
+    main 
+        div
+            .presentation-slider
+                .slider
+                    .wave
+                        .wrapped
+                            .content
+                                .main-title
+                                    h1
+                                        font-size: calc(14*1vw/2.4)
+                                    h2
+                                        font-size: calc(8*1vw/2.4)
+    footer
+        .footer-grid
+            &-unit-top
+                &:nth-of-type(3)
+                    .messangers
+                        .list
+                            img
+                                width: 25px
+                                height: 25px
