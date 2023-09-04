@@ -498,7 +498,7 @@
                         text-decoration: underline
                         color: #707076
                         font-size: calc(10*1vw/7.68)
-                        line-height: 18px
+                        line-height: calc(18*1vw/7.68)
 
 @media screen and (max-width: 500px)
     header 
@@ -513,6 +513,93 @@
                     .icons-flex 
                         div>i
                             font-size: calc(12*1vw/4.14)
+    main 
+        div 
+            .presentation-slider 
+                .slider 
+                    .buttons 
+                        button
+                            width: calc(54*1vw/7.68)
+                            height: calc(54*1vw/7.68)
+                            font-size: calc(12*1vw/7.68)
+            .accessories, .clother, .shoes
+                .block
+                    .buttons
+                        a i
+                            font-size: calc(12*1vw/4.14)
+                .block-content
+                    .wave-accessories, .wave-clother, .wave-shoes
+                        .product-unit
+                            h3
+                                font-size: calc(12*1vw/4.14)
+                            h4
+                                font-size: calc(10*1vw/4.14)
+                            .favorite 
+                                a 
+                                    i
+                                        font-size: calc(12*1vw/4.14)
+            .about-shop 
+                .block 
+                    .advantages-block
+                        padding: calc(12*1vw/4.14) calc(6*1vw/4.14)
+                        &-unit
+                            row-gap: calc(17*1vw/7.68)
+            .our-blog 
+                .block-content 
+                    grid-template-rows: .33fr 4.5fr 1fr
+                    .wave-news-content-unit 
+                        .title-text
+                            font-size: calc(10*1vw/4.14)
+                            line-height: calc(15*1vw/4.14)
+                        .text
+                            font-size: calc(7*1vw/4.14)
+                            line-height: calc(10.5*1vw/4.14)
+                        .bottom-nav
+                            .link
+                                a
+                                    font-size: calc(7*1vw/4.14)
+                                    line-height: calc(10.5*1vw/4.14)
+                            .date
+                                font-size: calc(6*1vw/4.14)
+                                line-height: calc(9*1vw/4.14)
+                    .buttons
+                        a i
+                            font-size: calc(12*1vw/4.14)
+    footer 
+        .footer-grid-unit-top 
+            .title
+                font-size: calc(10*1vw/4.14)
+                line-height: calc(15*1vw/4.14)
+            .call-to-action, .list ul li a, .our-email
+                font-size: calc(10*1vw/4.14)
+                line-height: calc(13.5*1vw/4.14)
+            &:nth-of-type(3) 
+                .messangers, .socials
+                    .list 
+                        img
+                            width: calc(30*1vw/7.68)
+                            height: calc(30*1vw/7.68)
+            &:nth-of-type(4) 
+                row-gap: calc(3*1vw/4.14)
+                .warning
+                    font-size: calc(8*1vw/4.14)
+                    line-height: calc(12*1vw/4.14)
+                .subscription 
+                    form
+                        input
+                            font-size: calc(10*1vw/4.14)
+                        button
+                            width: calc(29*1vw/7.68)
+                            height: calc(29*1vw/7.68)
+        .footer-grid-unit-bot
+            &.uno
+                img
+                    width: calc(100*1vw/7.68)
+                    height: auto
+            &.duo
+                img
+                    width: calc(140*1vw/7.68)
+                    height: auto
 
 @media screen and (max-width: 360px)
     header 
